@@ -8,6 +8,7 @@ import ProductosPage from '../pages/ProductosPage';
 
 const Routing = () => {
   return (
+    
     <Router>
         <Link to="/LoginPage">Login</Link> | 
         <Link to="/RegisterPage">Register</Link> /

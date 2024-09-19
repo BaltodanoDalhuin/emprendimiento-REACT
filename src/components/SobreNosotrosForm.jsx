@@ -1,63 +1,60 @@
-import React from 'react';
-import './HomePage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faUser, faHeart, faComment } from '@fortawesome/free-solid-svg-icons';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import img1 from '../assets/cadenainicial.jpg'
 
-const HomePage = () => {
-  return (
-    <div>
-      <header className="header">
-        <nav className="nav">
-          <a href="#">Joyería</a>
-          <a href="#">Anillos de Compromiso & Anillos de Boda</a>
-        </nav>
-        <div className="logo">GLAMIRA</div>
-        <div className="search">
-          <input type="text" placeholder="BÚSQUEDA" />
-          <FontAwesomeIcon icon={faSearch} />
-        </div>
-        <div className="icons">
-          <FontAwesomeIcon icon={faUser} />
-          <FontAwesomeIcon icon={faHeart} />
-        </div>
-      </header>
+const SobreNosotrosForm = () => {
+    return (
+        <Container className="my-5">
+            <h1 className="text-center mb-4">Sobre Nosotros</h1>
+            <p className="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus lacinia odio vitae vestibulum. Fusce ut placerat orci nulla. 
+                Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl 
+                tempus convallis quis ac lectus.
+            </p>
 
-      <header className="header">
-        <nav className="nav">
-          <a href="#">Joyas</a>
-          <a href="#">Anillos De Compromiso</a>
-          <a href="#">Alianzas</a>
-          <a href="#">Colecciones</a>
-          <a href="#">Hombre</a>
-          <a href="#">Niños</a>
-        </nav>
-      </header>
-
-      <main className="content">
-        <div className="text">
-          <h1>Cadenas</h1>
-          <p>
-            Los collares y pulseras no son los únicos tipos de cadenas que se pueden usar. 
-            También se pueden usar solos como un accesorio elegante. Explore la selección 
-            de cadenas de GLAMIRA para diferentes estilos.
-          </p>
-          <a href="#">Ver todo</a>
-        </div>
-        <div className="image">
-          <img
-            src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-xP3sM5SJvN6RMJmoEEml84ar.png"
-            alt="A woman holding gold chains and wearing a white top"
-            width="600"
-            height="400"
-          />
-        </div>
-      </main>
-
-      <div className="chat-icon">
-        <FontAwesomeIcon icon={faComment} />
-      </div>
-    </div>
-  );
+            <Row className="mt-4">
+                <Col md={4}>
+                    <Card>
+                        <Card.Img variant="top" src={img1} />
+                        <Card.Body>
+                            <Card.Title>Nuestra Historia</Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Vivamus lacinia odio vitae vestibulum.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={4}>
+                    <Card>
+                        <Card.Img variant="top" src={img1} />
+                        <Card.Body>
+                            <Card.Title>Quiénes Somos</Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed do eiusmod tempor incididunt ut labore et dolore 
+                                magna aliqua.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={4}>
+                    <Card>
+                        <Card.Img variant="top" src={img1} />
+                        <Card.Body>
+                            <Card.Title>Nuestro Menú</Card.Title>
+                            <Card.Text>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit 
+                                esse cillum dolore eu fugiat nulla pariatur.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
+    );
 };
 
-export default HomePage;
+export default SobreNosotrosForm;

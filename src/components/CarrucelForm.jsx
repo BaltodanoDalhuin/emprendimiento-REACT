@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import img1 from "../assets/casado.jpg"
-import img2 from "../assets/Chifrijo.jpg"
-import img3 from "../assets/gallopinto.jpg"
-import '../styles/carrusel.css'
+import {Carousel} from 'react-bootstrap';
+import img1 from "../assets/colleciones1.jpg"
+import img2 from "../assets/colleciones2.jpg"
+import img3 from "../assets/colleciones3.jpg"
+import '../styles/CarrucelStyles.css'
 
 
 function CarruselForm() {
@@ -22,27 +22,27 @@ function CarruselForm() {
             <Carousel.Item>
                 <img className="d-block w-100" src={img1} alt="Mitad" />
                 <Carousel.Caption>
-                    <h3>Casados</h3>
+                    <h3>Coleciones</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
                     src={img2}
-                    alt="Queque de Fresa"
+                    alt=""
                 />
                 <Carousel.Caption>
-                    <h3>Chifrijo</h3>
+                    <h3>Coleciones</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
                     src={img3}
-                    alt="Queque de Navidad"
+                    alt=""
                 />
                 <Carousel.Caption>
-                    <h3>Gallo Pinto</h3>
+                    <h3>Coleciones</h3>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

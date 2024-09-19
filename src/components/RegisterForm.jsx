@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { PostUser } from "../services/PostUser";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -8,29 +9,9 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    const userObj = { email, password };
+    const user = { email, password };
 
-    if (validate()) {
-      fetch('http://localhost:5173/user', {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(userObj),
-      })
-        .then((res) => {
-          if (res.ok) {
-            alert("Registration successful.");
-            navigate("/login");
-          } else {
-            alert("Error during registration.");
-          }
-        })
-        .catch((err) => {
-          alert("Failed: " + err.message);
-        });
-    }
-  };
-
-  const validate = () => {
+    const validate = () => {
     if (!email || !password) {
       alert("Both email and password are required.");
       return false;
@@ -42,6 +23,15 @@ const Register = () => {
     return true;
   };
 
+    if (validate()) {
+      PostUser(email, password)
+      alert("Registration successful.");
+      navigate("/LoginPage");
+  };
+
+  
+
+}
   return (
     <div>
       <form onSubmit={handleRegister}>

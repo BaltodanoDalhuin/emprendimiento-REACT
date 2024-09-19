@@ -1,11 +1,11 @@
-async function PostUser(usuario,email,password) {
+async function PostUser(email,password) {
     try {
         const userData = { 
             email,
             password
         };
 
-        const response = await fetch("http://localhost:5173/user", {
+        const response = await fetch("http://localhost:3001/user", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

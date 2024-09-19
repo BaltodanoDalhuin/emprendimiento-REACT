@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/MenuStyles.css'
 
-
 const MenuForm = () => {
   return (
     <aside className="w-1/4 bg-white p-4 shadow">

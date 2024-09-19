@@ -8,16 +8,19 @@ const HomeForm = () => {
       <header className="header">
         <div className="logo">BY | SOF </div>
         <nav className="nav">
-          <a href="#">Joyería</a>
           <a href="#">Productos</a>
           <a href="#">Medidas</a>
-          <a href="#">Anillos & Collares</a>
           <a href="#">Colecciones</a>
           <a href="#">Sobre Nosotros</a>
           <a href="#">Ubicacion</a>
         </nav>
         <div className="search">
-          <a href="#">BÚSQUEDA</a>
+          <input placeholder="BUSQUEDA" type="text" />
+          <div className="icons">
+            <a href="#"><i className="fas fa-search"></i></a>
+            <a href="#"><i className="fas fa-user"></i></a>
+            <a href="#"><i className="fas fa-heart"></i></a>
+          </div>
         </div>
       </header>
 
@@ -30,9 +33,6 @@ const HomeForm = () => {
           Siempre he sido una persona creativa y con un gusto por la moda y las tendencias, así que sabía que no podía quedarme solo con ese accesorio por lo que empecé a publicar algunos otros, como collares y pulseras. 
           El público lo aceptó perfecto e incluso empezaron a pedirme sus accesorios personalizados
           </p>
-          <a className="link" href="#">
-            Todas las joyas 
-          </a>
         </div>
 
         <div className="image">

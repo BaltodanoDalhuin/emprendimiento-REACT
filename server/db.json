@@ -1,12 +1,38 @@
 {
-    "user": [
-      { "email": "pipe@gmail.com", "password":1234 },
-      { "email": "andres@gmail.com", "password":1234  },
-      { "email": "sofia@gmail.com", "password":1234  }
-    ],
-    "productos": [
-      { "id": 1, "name": "Collar de oro", "price": 199.99 },
-      { "id": 2, "name": "Anillo de plata", "price": 149.99 }
-    ]
-  }
+  "user": [
+    {
+      "email": "pipe@gmail.com",
+      "password": 1234,
+      "id": "0cbb"
+    },
+    {
+      "email": "andres@gmail.com",
+      "password": 1234,
+      "id": "9156"
+    },
+    {
+      "email": "sofia@gmail.com",
+      "password": 1234,
+      "id": "57c8"
+    },
+    {
+      "id": "2c32",
+      "email": "nicole@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "cd2f",
+      "email": "pipe@gmail.com",
+      "password": "12345"
+    }
+  ],
+
   
+    "products": [
+      { "id": 1, "imagen": "path_to_image1", "name": "Anillo De Rubi", "description": "14k Oro & Rubi", "price": "₡476 605,00" },
+
+      { "id": 2, "imagen": "path_to_image2", "name": "Anillo De Zafiro", "description": "14k Oro & Zafiro", "price": "₡366 702,00" }
+    ]
+  
+  
+}
