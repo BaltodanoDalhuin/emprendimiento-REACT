@@ -1,0 +1,12 @@
+{
+    "user": [
+      { "email": "pipe@gmail.com", "password":1234 },
+      { "email": "andres@gmail.com", "password":1234  },
+      { "email": "sofia@gmail.com", "password":1234  }
+    ],
+    "productos": [
+      { "id": 1, "name": "Collar de oro", "price": 199.99 },
+      { "id": 2, "name": "Anillo de plata", "price": 149.99 }
+    ]
+  }
+  
