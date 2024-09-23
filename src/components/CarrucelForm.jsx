@@ -2,8 +2,8 @@ import { useState } from 'react';
 import {Carousel} from 'react-bootstrap';
 import img1 from "../assets/clientescadenas.jpg"
 import img2 from "../assets/clientescadenas1.jpg"
-import img3 from "../assets/clientescadenas2.jpg"
-import img4 from "../assets/clientecadenas3.jpeg"
+import img3 from "../assets/clientecadenas3.jpeg"
+import img4 from "../assets/clientescadenas4.jpg"
 import '../styles/CarrucelStyles.css'
 
 

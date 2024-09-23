@@ -1,25 +1,26 @@
 #title-p{
     font-size: 50px;
-}
-
-.title-text {
+    color: black;
+  }
+  
+  .title-text {
     font-size: 20px;
-    color: #008000; 
-    font-family: 'Nerko One', cursive;
-}
-
-.description-text {
+    color: #000000; 
+    font-family: "Playfair Display", serif;
+  }
+  
+  .description-text {
     font-size: 16px; 
     color: #000000; 
-    font-family: 'Nerko One', cursive;
-}
-
-
-.hover-card {
+    font-family: "Playfair Display", serif;
+  }
+  
+  
+  .hover-card {
     transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.hover-card:hover {
+  }
+  
+  .hover-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
+  }
