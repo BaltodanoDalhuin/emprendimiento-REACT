@@ -1,93 +1,101 @@
-import React from "react";
-import '../styles/FooterStyles.css'
-import { FaStar, FaStarHalfAlt, FaFacebookF, FaInstagram, FaPinterest, FaYoutube } from "react-icons/fa";
+import { Container, Row, Col } from "react-bootstrap";
+import {FaWhatsapp,FaInstagram,FaFacebookF,FaMapMarkerAlt,} from "react-icons/fa";
+import "../styles/Footer.css";
+import { Link } from "react-router-dom";
+import UbicacionForm from "./UbicacionForm";
 
-function App() {
+const FooterForm = () => {
   return (
-    <div className="App">
-      <div className="navbar">
-        <a>Anillos de compromiso</a>
-        <a>Anillos</a>
-        <a>Collares</a>
-        <a>Pendientes</a>
-        <a>Pulseras</a>
-        <a>Anillos de boda</a>
-        <a>Hombres</a>
-        <a>Niños</a>
-        <a>Más joyas</a>
-        <a>Colecciones</a>
+    <>
+      <div>
+        <br />
+        <br />
       </div>
+      <footer className="footer">
+        <Container className="Container23">
+          <Row className="mb-4">
+            <Col md={4} className="text-center text-md-left mb-3 mb-md-0">
+              <h5>Información</h5>
+              <p>
+                Si quieres saber más de nosotros o de nuestros productos, por
+                favor comunícate por medio de nuestras redes sociales.
+              </p>
+            </Col>
 
-      <div className="payment-logos">
-        <div className="payment-placeholder">DHL</div>
-        <div className="payment-placeholder">Mastercard</div>
-        <div className="payment-placeholder">VISA</div>
-        <div className="payment-placeholder">American Express</div>
-        <div className="payment-placeholder">Diners Club</div>
-        <div className="payment-placeholder">JCB</div>
-      </div>
+            <Col md={4} className="text-center text-md-left mb-3 mb-md-0">
+              <h5>Enlaces</h5>
+              <ul className="list-unstyled">
+                <li>
+                  <Link as={Link} to="" className="text-white">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link as={Link} to="" className="text-white">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link as={Link} to="" className="text-white"></Link>
+                </li>
+              </ul>
+            </Col>
+            <Col md={4} className="text-center">
+              <h5>Redes Sociales</h5>
+              <Row className="justify-content-center">
+                <Col xs="auto" className="footer-icon-col mb-3">
+                  <a
+                    href="https://wa.me/+50685163974"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="footer-icon"
+                    id="whatsapp"
+                  >
+                    <FaWhatsapp className="footer-icon-img" />
+                    <span className="footer-icon-text">WhatsApp</span>
+                  </a>
+                </Col>
+                <Col xs="auto" className="footer-icon-col mb-3">
+                  <a
+                    href="https://instagram.com/_by.sof_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="footer-icon"
+                    id="instagram"
+                  >
+                    <FaInstagram className="footer-icon-img" />
+                    <span className="footer-icon-text">Instagram</span>
+                  </a>
+                </Col>
 
-      <div className="footer">
-        <div className="logo">GLAMIRA</div>
+                <Col xs="auto" className="footer-icon-col mb-3">
+                  <a
+                    href="https://www.google.com/maps/place/Heredia/@9.9978039,-84.1194575,117m/data=!3m1!1e3!4m6!3m5!1s0x8fa0faddaded66bd:0x2527e99d1a1e0bdf!8m2!3d9.9981413!4d-84.1197643!16s%2Fm%2F02rccyb?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="footer-icon"
+                    id="address"
+                  >
+                    <FaMapMarkerAlt className="footer-icon-img" />
+                    <span className="footer-icon-text">Dirección</span>
+                  </a>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
 
-        <div className="reviews">
-          <span>Reseñas</span>
-          <FaStar />
-          <FaStar />
-          <FaStar />
-          <FaStar />
-          <FaStarHalfAlt />
-          <span>4.84</span>
-          <a>Ver Todas Las Valoraciones</a>
-        </div>
-
-        <div className="social-icons">
-          <a><FaFacebookF /></a>
-          <a><FaInstagram /></a>
-          <a><FaPinterest /></a>
-          <a><FaYoutube /></a>
-        </div>
-
-        <div className="links">
-          <div>
-            <a>Sobre nosotros</a>
-            <a>Póngase en contacto con nosotros</a>
-          </div>
-          <div>
-            <a>Devoluciones</a>
-            <a>Planes de garantía y protección</a>
-          </div>
-          <div>
-            <a>Beneficios</a>
-            <a>Guías y Educación</a>
-          </div>
-          <div>
-            <a>Ayuda y preguntas frecuentes</a>
-          </div>
-        </div>
-
-        <div className="trustpilot">
-          <span>Great</span>
-          <div className="trustpilot-placeholder">Trustpilot Logo</div>
-          <span>40,958 reviews on</span>
-        </div>
-
-        <div className="bottom-bar">
-          <div>
-            <a>Seleccione su país</a>
-          </div>
-          <div>
-            <span>© GLAMIRA 2008 - 2024</span>
-          </div>
-          <div>
-            <a>Términos y condiciones</a>
-            <a>Política de privacidad</a>
-            <a>Ley</a>
-          </div>
-        </div>
-      </div>
-    </div>
+          <Row>
+            <Col className="text-center">
+              <p>
+                &copy; {new Date().getFullYear()} By | Sof. Todos los derechos reservados.
+                reservados.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
+    </>
   );
-}
+};
 
-export default App;
+export default FooterForm;

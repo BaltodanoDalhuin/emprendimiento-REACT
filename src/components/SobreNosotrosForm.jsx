@@ -1,60 +1,33 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import img1 from '../assets/cadenainicial.jpg'
+import '../styles/SobreNosotros.css'
+import img1 from '../assets/presentacion.jpg'
+
+
 
 const SobreNosotrosForm = () => {
-    return (
-        <Container className="my-5">
-            <h1 className="text-center mb-4">Sobre Nosotros</h1>
-            <p className="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Vivamus lacinia odio vitae vestibulum. Fusce ut placerat orci nulla. 
-                Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl 
-                tempus convallis quis ac lectus.
-            </p>
+  return (
+    <>
+    <br />
+    <br />
+      <div className="container" >
+        <div className="text">
+          <p>
+            A día de hoy By Sof tiene un estilo y una cara un poco más marcado,
+            hay infinidad de productos que he agregado a la lista,
+            considero que nuestro estilo es muy personal pero nunca me olvido de que soy una marca que te ayuda a materializar los accesorios que tenes en mente,
+            eso me pone orgullosa porque siempre que alguien lleve un accesorio By Sof diseñado por ellos mismo,
+            va llevar un pedacito de felicidad.
+          </p>
+        </div>
 
-            <Row className="mt-4">
-                <Col md={4}>
-                    <Card>
-                        <Card.Img variant="top" src={img1} />
-                        <Card.Body>
-                            <Card.Title>Nuestra Historia</Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Vivamus lacinia odio vitae vestibulum.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={4}>
-                    <Card>
-                        <Card.Img variant="top" src={img1} />
-                        <Card.Body>
-                            <Card.Title>Quiénes Somos</Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={4}>
-                    <Card>
-                        <Card.Img variant="top" src={img1} />
-                        <Card.Body>
-                            <Card.Title>Nuestro Menú</Card.Title>
-                            <Card.Text>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit 
-                                esse cillum dolore eu fugiat nulla pariatur.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-        </Container>
-    );
+        <div className="image">
+          <img src={img1} alt="Preview" />,
+        </div>
+      </div>
+      <br />
+      <br />
+    </>
+  );
 };
+
 
 export default SobreNosotrosForm;

@@ -28,11 +28,16 @@
   ],
 
   
+  
     "products": [
-      { "id": 1, "imagen": "path_to_image1", "name": "Anillo De Rubi", "description": "14k Oro & Rubi", "price": "₡476 605,00" },
-
-      { "id": 2, "imagen": "path_to_image2", "name": "Anillo De Zafiro", "description": "14k Oro & Zafiro", "price": "₡366 702,00" }
+      { "id": 1, "imagen": "anillorojo.jpg", "name": "Anillo De Rubi", "description": "Color Dorado & Plateaado", "price": "₡476 605,00" },
+      { "id": 2, "imagen": "anilloazul.jpg", "name": "Anillo De Zafiro", "description": "Color Dorado & Plateaado", "price": "₡366 702,00" },
+      { "id": 3, "imagen": "aretestejidos.jpg", "name": "Aretes Negros & Blancos", "description": "Aretes Tejidos", "price": "₡393 986,00" },
+      { "id": 4, "imagen": "aretestejidoscolores.jpg", "name": "Aretes Rosa & Azul", "description": "Aretes Tejidos", "price": "₡328 971,00" },
+      { "id": 5, "imagen": "setanillos.jpg", "name": "Set De Anillos Dorados", "description": "Color Dorado & Plateaado", "price": "₡328 971,00" },
+      { "id": 6, "imagen": "cadenapersonalizada.jpg", "name": "Cadena Personalizada", "description": "Color Dorado & Plateaado", "price": "₡638 465,00" }
     ]
+  
   
   
 }

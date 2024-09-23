@@ -1,4 +1,6 @@
 import MedidasForm from '../components/MedidasForm';
+import NavBar from "../components/NavBar";
+import FooterForm from "../components/FooterForm"
 
 const MedidasPage = () => {
   const handleMedidas = (credentials) => {
@@ -8,8 +10,9 @@ const MedidasPage = () => {
 
   return (
     <div>
- 
+       <NavBar onHome={() => alert("")} />
       <MedidasForm onMedidas={handleMedidas} />
+      <FooterForm onHome={()  => alert("")} />
     </div>
   );
 };

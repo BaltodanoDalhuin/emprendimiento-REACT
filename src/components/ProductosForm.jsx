@@ -30,18 +30,6 @@ function ProductosPage() {
 
   return (
     <div className="App">
-      <header className="header">
-        <div className="logo">BY | SOF</div>
-        <div className="search">
-          <input placeholder="BUSQUEDA" type="text" />
-          <div className="icons">
-            <a href="#"><i className="fas fa-search"></i></a>
-            <a href="#"><i className="fas fa-user"></i></a>
-            <a href="#"><i className="fas fa-heart"></i></a>
-          </div>
-        </div>
-      </header>
-
       <main className="main">
         <h1>Productos</h1>
         <Container>

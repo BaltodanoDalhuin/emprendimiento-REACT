@@ -1,4 +1,7 @@
 import ProductosForm from '../components/ProductosForm';
+import NavBar from "../components/NavBar";
+import FooterForm from "../components/FooterForm"
+
 
 const ProductosPage = () => {
   const handleProductos = (credentials) => {
@@ -8,8 +11,9 @@ const ProductosPage = () => {
 
   return (
     <div>
- 
+        <NavBar onHome={() => alert("")} />
       <ProductosForm onProductos={handleProductos} />
+      <FooterForm onHome={()  => alert("")} />
     </div>
   );
 };

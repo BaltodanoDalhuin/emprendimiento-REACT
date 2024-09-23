@@ -1,0 +1,58 @@
+/* NavBar.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 130px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #f0a500;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons a {
+  color: #000; /* Color de los íconos */
+  font-size: 1.5em; /* Tamaño de los íconos */
+  transition: color 0.3s;
+}
+
+.icons a:hover {
+  color: #f0a500; /* Color de hover */
+}
