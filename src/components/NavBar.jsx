@@ -17,7 +17,6 @@ const NavBar = () => {
         <Link to="/MedidasPage">Medidas</Link>
         <Link to="/ColecionesPage">Colecciones</Link>
         <Link to="/ProductosPage">Productos</Link>
-        <a href="#">Sobre Nosotros</a>
         <Link to="/UbicacionPage">Ubicación</Link>
       </nav>
       <div className="search">

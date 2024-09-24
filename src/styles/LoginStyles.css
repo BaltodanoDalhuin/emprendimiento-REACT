@@ -1,0 +1,74 @@
+/* Container general */
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título del formulario */
+  .login-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Estilos para las etiquetas de los campos */
+  .login-label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para los campos de texto */
+  .login-input {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Grupo de formulario */
+  .login-form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el botón de inicio de sesión */
+  .login-button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #000000;
+  }
+  
+  /* Estilos para los mensajes de error */
+  .login-error {
+    font-size: 1rem;
+    color: red;
+    text-align: center;
+  }
+  
+  /* Enlace de registro */
+  .login-register-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-register-link a:hover {
+    text-decoration: underline;
+  }
+  

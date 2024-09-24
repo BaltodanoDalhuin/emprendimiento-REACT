@@ -32,7 +32,7 @@ function ProductosPage() {
     <div className="App">
       <main className="main">
         <h1>Productos</h1>
-        <Container>
+        <div>
           <Row>
             {products.map((product) => (
               <Col key={product.id} md={4} className="mb-4">
@@ -61,7 +61,7 @@ function ProductosPage() {
               </Col>
             ))}
           </Row>
-        </Container>
+        </div>
       </main>
     </div>
   );

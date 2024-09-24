@@ -1,43 +1,8 @@
 {
   "user": [
     {
-      "email": "pipe@gmail.com",
-      "password": 1234,
-      "id": "0cbb"
-    },
-    {
-      "email": "andres@gmail.com",
-      "password": 1234,
-      "id": "9156"
-    },
-    {
-      "email": "sofia@gmail.com",
-      "password": 1234,
-      "id": "57c8"
-    },
-    {
-      "id": "2c32",
-      "email": "nicole@gmail.com",
-      "password": "12345"
-    },
-    {
-      "id": "cd2f",
-      "email": "pipe@gmail.com",
-      "password": "12345"
+
     }
   ],
-
-  
-  
-    "products": [
-      { "id": 1, "imagen": "anillorojo.jpg", "name": "Anillo De Rubi", "description": "Color Dorado & Plateaado", "price": "₡476 605,00" },
-      { "id": 2, "imagen": "anilloazul.jpg", "name": "Anillo De Zafiro", "description": "Color Dorado & Plateaado", "price": "₡366 702,00" },
-      { "id": 3, "imagen": "aretestejidos.jpg", "name": "Aretes Negros & Blancos", "description": "Aretes Tejidos", "price": "₡393 986,00" },
-      { "id": 4, "imagen": "aretestejidoscolores.jpg", "name": "Aretes Rosa & Azul", "description": "Aretes Tejidos", "price": "₡328 971,00" },
-      { "id": 5, "imagen": "setanillos.jpg", "name": "Set De Anillos Dorados", "description": "Color Dorado & Plateaado", "price": "₡328 971,00" },
-      { "id": 6, "imagen": "cadenapersonalizada.jpg", "name": "Cadena Personalizada", "description": "Color Dorado & Plateaado", "price": "₡638 465,00" }
-    ]
-  
-  
-  
+  "products": []
 }

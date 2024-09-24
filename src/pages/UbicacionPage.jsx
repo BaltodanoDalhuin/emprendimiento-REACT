@@ -1,4 +1,6 @@
 import UbicacionForm from "../components/UbicacionForm";
+import NavBar from "../components/NavBar";
+import FooterForm from "../components/FooterForm"
 
 
 
@@ -9,8 +11,9 @@ const UbicacionPage = () => {
 
   return (
     <div>
- 
-      < UbicacionForm/>
+        <NavBar onHome={() => alert("")} />
+        < UbicacionForm/>
+      <FooterForm onHome={()  => alert("")} />
     </div>
   );
 };

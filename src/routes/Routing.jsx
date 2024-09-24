@@ -6,6 +6,7 @@ import MedidasPage from '../pages/MedidasPage';
 import ProductosPage from '../pages/ProductosPage';
 import ColecionesPage from '../pages/ColecionesPage';
 import UbicacionPage from '../pages/UbicacionPage';
+import AdminPage from '../pages/AdminPage';
 
 
 
@@ -21,6 +22,7 @@ const Routing = () => {
         <Route path="/ProductosPage" element={<ProductosPage />} />
         <Route path="/ColecionesPage" element={<ColecionesPage/>} />
         <Route path="/UbicacionPage" element={<UbicacionPage />} />
+        <Route path="/AdminPage" element={<AdminPage />}/>
 
       </Routes>
     </Router>

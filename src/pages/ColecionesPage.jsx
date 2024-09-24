@@ -1,4 +1,7 @@
 import ColecionesForm from '../components/ColecionesForm';
+import NavBar from "../components/NavBar";
+import FooterForm from "../components/FooterForm"
+
 
 const ColecionesPage = () => {
   const handleColeciones = (credentials) => {
@@ -7,7 +10,9 @@ const ColecionesPage = () => {
 
   return (
     <div>
+           <NavBar onHome={() => alert("")} />
       <ColecionesForm onColecciones={handleColeciones} />
+      <FooterForm onHome={()  => alert("")} />
     </div>
   );
 };

@@ -6,6 +6,12 @@ import '../styles/CardHome.css';
 import colleciones1 from '../assets/colleciones1.jpg';
 import colleciones2 from '../assets/colleciones2.jpg';
 import colleciones3 from '../assets/colleciones3.jpg';
+import colleciones4 from '../assets/colleciones4.jpg';
+import colleciones5 from '../assets/colleciones5.jpg';
+import colleciones6 from '../assets/colleciones6.jpg';
+import colleciones7 from '../assets/colleciones7.jpg';
+import colleciones8 from '../assets/colleciones8.jpg';
+import colleciones9 from '../assets/colleciones9.jpg';
 
 
 const ColecionesForm = () => {
@@ -29,22 +35,40 @@ const ColecionesForm = () => {
             imgSrc: colleciones3
         },
         {
-            title: "Colecion 1",
+            title: "Colecion 4",
             description: "Taza de Personalizada",
             category: "Categoria: Personalizada",
-            imgSrc: colleciones1
+            imgSrc: colleciones4
         },
         {
-            title: "Colecion 2",
-            description: "Camisas Personalizadas",
+            title: "Colecion 5",
+            description: "Vasos Termicos Personalizados",
             category: "Categoria: Personalizada",
-            imgSrc: colleciones2
+            imgSrc: colleciones5
         },
         {
-            title: "Colecion 3",
-            description: "Scrunchies diferetes colores",
+            title: "Colecion 6",
+            description: "Lapicero y Llavero",
             category: "Categoria: Personalizada",
-            imgSrc: colleciones3
+            imgSrc: colleciones6
+        },
+        {
+            title: "Colecion 7",
+            description: "Caja de Flores tejidas",
+            category: "Categoria: Personalizada",
+            imgSrc: colleciones7
+        },
+        {
+            title: "Colecion 8",
+            description: "Tazas Personalizadas",
+            category: "Categoria: Personalizada",
+            imgSrc: colleciones8
+        },
+        {
+            title: "Colecion 9",
+            description: "Tazas Personalizadas",
+            category: "Categoria: Personalizada",
+            imgSrc: colleciones9
         }
     ];
 
