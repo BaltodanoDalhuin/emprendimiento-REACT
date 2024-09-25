@@ -1,20 +1,69 @@
+import React from 'react';
+import "../styles/Ubicacion.css";
 
-
-const UbicacionForm= () => {
+const UbicacionForm = () => {
   return (
-
-      <div className="mapaCont">
-          <div><h1>UBICACIÓN</h1></div>
-          <iframe
-              src="https://www.google.com/maps/embed/v1/place?q=heredia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              width="600"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-
-          ></iframe>
+    <div className="about-location-container">
+      {/* Sección de Sobre Nosotros */}
+      <div className="about-us-container">
+        <h2>Sobre Nosotros</h2>
+        <div className="about-section">
+          <div className="about-text">
+            <h3>
+            ¿Quienes somos? 
+            </h3>
+            <p>
+            Un día decidí que no podía guardarme las ideas y las ganas de que cualquier persona portara consigo piezas únicas que lo diferenciaban del resto. Y ese es otro de los motivos por los que hoy somos By Sof
+            <p>
+            Trabajamos fuerte por mejorar y siempre queremos que vivas una agradable experiencia. 
+            Si tienes recomendaciones, quejas o consultas no dudes en escribirnos, trabajamos todos los días por mejorar.
+            </p>
+        
+            </p>
+          </div>
+          <div className="about-image-container">
+            <img
+              src="https://via.placeholder.com/300" 
+              alt="Imagen de nuestra empresa"
+              className="about-image"
+            />
+          </div>
+        </div>
       </div>
-  )
-}
-export default UbicacionForm
+      <div className="about-us-container">
+        <div className="about-section">
+          <div className="about-text">
+            <h3>Inicios</h3>
+            <p>
+             Está fue nuestra primera cara, quizás algunos me conocieron así. Seguimos llenando los accesorios de color pero ahora buscamos proyectar una imagen más elegante.
+             Nuestro aniversario es el próximo 11 de octubre. Cumplimos 4 años
+            </p>
+          </div>
+          <div className="about-image-container">
+            <img
+              src="https://via.placeholder.com/300" 
+              alt="Imagen de nuestra empresa"
+              className="about-image"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Sección de Ubicación */}
+      <div className="mapaCont">
+        <h2>Ubicación</h2>
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?q=heredia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          width="600"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          title="Mapa de ubicación"
+        ></iframe>
+      </div>
+    </div>
+  );
+};
+
+export default UbicacionForm;

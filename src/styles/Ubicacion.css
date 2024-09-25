@@ -1,0 +1,57 @@
+.about-location-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo para la sección de Sobre Nosotros */
+  .about-us-container {
+    margin-bottom: 50px;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .about-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .about-image-container {
+    flex-shrink: 0;
+    max-width: 300px;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  /* Estilo para la sección de Ubicación */
+  .mapaCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mapaCont h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
