@@ -1,56 +1,59 @@
 import { Button, Table, Container, Row, Col, Form } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { PostProducto, GetProductos, PutProducto, DeleteProducto } from '../services/ProductServices';
 
 const AdminForm = () => {
+  // estado para almacenar la lista de productos obtenidos de la base de datos
   const [productos, setProductos] = useState([]);
+  // estados para controlar los valores del formulario
   const [nombre, setNombre] = useState('');
   const [marca, setMarca] = useState('');
   const [categoria, setCategoria] = useState('');
   const [precio, setPrecio] = useState('');
   const [imagen, setImagen] = useState('');
-  const [editingIndex, setEditingIndex] = useState(null); // Índice del producto en edición
+  // estado para saber si estamos editando un producto (almacena el índice del producto en edición)
+  const [editingIndex, setEditingIndex] = useState(null);
 
-  // Maneja la carga del archivo de imagen
+  // maneja la carga del archivo de imagen y lo convierte en base64
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {
       const reader = new FileReader();
+      // cuando se termina de leer el archivo, se guarda la imagen en el estado
       reader.onloadend = () => {
         setImagen(reader.result);
       };
-      reader.readAsDataURL(file);
+      reader.readAsDataURL(file); // lee el archivo como una url en base64
     }
   };
 
-  // Maneja el envío del formulario para agregar o editar productos
+  // maneja el envío del formulario para agregar o editar productos
   const handleSubmit = async (event) => {
     event.preventDefault();
+    // crea un objeto con los datos del formulario
     const nuevoProducto = { nombre, marca, categoria, precio, imagen };
-    
+
     if (editingIndex !== null) {
-      // Si estamos editando un producto
+      // si estamos editando un producto existente
       await PutProducto(productos[editingIndex].id, nuevoProducto);
-      console.log(editingIndex);
-      
-      setEditingIndex(null); // Resetear el índice
+      setEditingIndex(null); // resetea el índice de edición
     } else {
-      // Agregar un nuevo producto
+      // si estamos agregando un nuevo producto
       await PostProducto(nuevoProducto);
     }
 
-    resetForm(); // Resetear el formulario
-    fetchProductos(); // Refrescar la lista de productos
+    resetForm(); // resetea el formulario
+    fetchProductos(); // refresca la lista de productos
   };
 
-  // Función para obtener productos
+  // función para obtener los productos de la base de datos
   const fetchProductos = async () => {
     const data = await GetProductos();
-    setProductos(data);
+    setProductos(data); // actualiza el estado con los productos obtenidos
   };
 
-  // Maneja la edición de un producto
+  // maneja la edición de un producto, llenando el formulario con los datos del producto seleccionado
   const handleEdit = (index) => {
     const producto = productos[index];
     setNombre(producto.nombre);
@@ -58,16 +61,16 @@ const AdminForm = () => {
     setCategoria(producto.categoria);
     setPrecio(producto.precio);
     setImagen(producto.imagen);
-    setEditingIndex(index); // Establecer el índice para editar
+    setEditingIndex(index); // establece el índice del producto que se está editando
   };
 
-  // Maneja la eliminación de un producto
+  // maneja la eliminación de un producto
   const handleDelete = async (id) => {
-    await DeleteProducto(id);
-    fetchProductos(); // Refrescar la lista de productos
+    await DeleteProducto(id); // elimina el producto por su id
+    fetchProductos(); // refresca la lista de productos
   };
 
-  // Resetea el formulario
+  // resetea los valores del formulario
   const resetForm = () => {
     setNombre('');
     setMarca('');
@@ -76,16 +79,16 @@ const AdminForm = () => {
     setImagen('');
   };
 
-  // Efecto para cargar productos al inicio
+  // carga la lista de productos cuando el componente se monta
   useEffect(() => {
-    fetchProductos();
+    fetchProductos(); // obtiene los productos al cargar el componente
   }, []);
 
   return (
     <Container>
       <h1 className="text-center my-4">Products</h1>
 
-      {/* Formulario para agregar/editar productos */}
+      {/* formulario para agregar o editar productos */}
       <Form onSubmit={handleSubmit} className="mb-4">
         <Row>
           <Col>
@@ -133,6 +136,7 @@ const AdminForm = () => {
             />
           </Col>
           <Col>
+            {/* el botón cambia su texto dependiendo de si estamos agregando o editando */}
             <Button type="submit" variant="primary">
               {editingIndex !== null ? 'Actualizar Producto' : 'Agregar Producto'}
             </Button>
@@ -140,7 +144,7 @@ const AdminForm = () => {
         </Row>
       </Form>
 
-      {/* Tabla de Productos */}
+      {/* tabla para mostrar los productos */}
       <Table striped bordered hover>
         <thead>
           <tr>
@@ -154,6 +158,7 @@ const AdminForm = () => {
           </tr>
         </thead>
         <tbody>
+          {/* recorre la lista de productos y los muestra en filas */}
           {productos.map((producto, index) => (
             <tr key={producto.id}>
               <td>{producto.id}</td>
@@ -162,10 +167,13 @@ const AdminForm = () => {
               <td>{producto.categoria}</td>
               <td>{producto.precio}$</td>
               <td>
+                {/* muestra la imagen del producto */}
                 <img src={producto.imagen} alt={producto.nombre} width="50" />
               </td>
               <td>
+                {/* botón para editar, que carga los datos en el formulario */}
                 <Button variant="primary" size="sm" className="me-2" onClick={() => handleEdit(index)}>Edit</Button>
+                {/* botón para eliminar el producto */}
                 <Button variant="danger" size="sm" onClick={() => handleDelete(producto.id)}>Delete</Button>
               </td>
             </tr>

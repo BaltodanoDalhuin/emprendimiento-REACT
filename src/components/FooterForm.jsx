@@ -1,8 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import {FaWhatsapp,FaInstagram,FaFacebookF,FaMapMarkerAlt,} from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaMapMarkerAlt } from "react-icons/fa"
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
-import UbicacionForm from "./UbicacionForm";
 
 const FooterForm = () => {
   return (

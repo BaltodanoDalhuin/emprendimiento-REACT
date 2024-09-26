@@ -1,10 +1,11 @@
 import React from 'react';
 import "../styles/Ubicacion.css";
+import img1 from '../assets/alenafoto.jpg'
+import img2 from '../assets/primerlogo.jpg'
 
 const UbicacionForm = () => {
   return (
     <div className="about-location-container">
-      {/* Sección de Sobre Nosotros */}
       <div className="about-us-container">
         <h2>Sobre Nosotros</h2>
         <div className="about-section">
@@ -22,11 +23,9 @@ const UbicacionForm = () => {
             </p>
           </div>
           <div className="about-image-container">
-            <img
-              src="https://via.placeholder.com/300" 
-              alt="Imagen de nuestra empresa"
-              className="about-image"
-            />
+        <div className="image">
+          <img src={img1} alt="Preview" />,
+        </div>
           </div>
         </div>
       </div>
@@ -40,11 +39,9 @@ const UbicacionForm = () => {
             </p>
           </div>
           <div className="about-image-container">
-            <img
-              src="https://via.placeholder.com/300" 
-              alt="Imagen de nuestra empresa"
-              className="about-image"
-            />
+          <div className="image">
+          <img src={img2} alt="Preview" />,
+        </div>
           </div>
         </div>
       </div>

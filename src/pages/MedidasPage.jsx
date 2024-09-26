@@ -5,7 +5,7 @@ import FooterForm from "../components/FooterForm"
 const MedidasPage = () => {
   const handleMedidas = (credentials) => {
     console.log('Medidas credentials:', credentials);
-    // Aquí puedes añadir la lógica para autenticar al usuario
+
   };
 
   return (

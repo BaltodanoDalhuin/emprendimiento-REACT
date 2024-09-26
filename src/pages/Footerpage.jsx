@@ -3,7 +3,7 @@ import FooterForm from '../components/FooterForm';
 const FooterPage = () => {
   const handleFooter = (credentials) => {
     console.log('Footer credentials:', credentials);
-    // Aquí puedes añadir la lógica para autenticar al usuario
+
   };
 
   return (
