@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-*{
+* {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -102,4 +102,76 @@ body {
 
 .content .image {
     flex: 1;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header {
+        padding: 15px 30px;
+    }
+    .header .logo {
+        font-size: 22px;
+    }
+    .header .nav a {
+        font-size: 18px;
+    }
+    .content {
+        padding: 15px 30px;
+    }
+    .content .text h1 {
+        font-size: 32px;
+    }
+    .content .text p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .text {
+        padding-right: 0;
+    }
+    .content .text h1 {
+        font-size: 28px;
+    }
+    .content .text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 10px 20px;
+    }
+    .header .logo {
+        font-size: 20px;
+    }
+    .header .nav a {
+        font-size: 16px;
+    }
+    .content {
+        padding: 10px 20px;
+    }
+    .content .text h1 {
+        font-size: 24px;
+    }
+    .content .text p {
+        font-size: 18px;
+    }
+    .breadcrumb {
+        padding: 10px 20px;
+    }
+    .breadcrumb a {
+        font-size: 12px;
+    }
 }
